@@ -1,34 +1,32 @@
-GrowFit – Android Fitness Tracker
+🌿 GrowFit – Android Fitness Tracker
 
-A small, clean Android app (Kotlin + Jetpack Compose + Firebase) to track workouts. It has auth, a weekly plan, a workout journal (with optional photos), and a simple progress chart — all with a soft green Material 3 theme.
+A clean, lightweight fitness app built with Kotlin + Jetpack Compose + Firebase to track your workouts.
 
+✨ Features
 
+🔐 Auth: Email/password Sign Up / Sign In, auto-login, logout.
 
-Features
+📅 Plan: Weekly workout plan — add, edit, delete.
 
-Email/password Sign in / Sign up, auto-login, Logout.
+🏋️ Journal: Log workouts (type, duration, weight, notes) + optional photo.
 
-Plan: weekly plan (add / edit / delete).
+📈 Progress: Line chart by exercise, metric (max weight/total duration), and days (7/30/90).
 
-Journal: log workouts (type, duration, weight, notes) + optional photo.
+🎨 UX: Soft green Material 3 theme, smooth navigation, RTL support, empty states, form validation.
 
-Progress: line chart by exercise, metric (max weight / total duration), and days (7/30/90).
+🚀 Quick Start
 
-Nice UX: Material 3, Navigation, empty states, form validation, RTL.
+Open in Android Studio Koala/Iguana+ (JDK 17).
 
-Quick start
+Add your Firebase google-services.json (matching package, e.g., com.example.growfit1).
 
-Open the project in Android Studio (Koala/Iguana+), JDK 17.
+Sync Gradle → ▶ Run on API 30+ device/emulator.
 
-Put your Firebase app/google-services.json (package must match, e.g. com.example.growfit1).
+Enable Firebase Email/Password Auth + publish the rules below.
 
-Sync Gradle → Run ▶ app (API 30+ device/emulator).
+🔧 Firebase Rules
 
-Firebase (once)
-
-Enable Authentication → Email/Password.
-
-Firestore Rules (publish):
+Firestore:
 
 rules_version = '2';
 service cloud.firestore {
@@ -40,7 +38,7 @@ service cloud.firestore {
 }
 
 
-(Optional photos) Storage Rules:
+Storage (optional photos):
 
 rules_version = '2';
 service firebase.storage {
@@ -52,28 +50,26 @@ service firebase.storage {
 }
 
 
-Note: Storage may require the Blaze plan. App saves entries even without a photo.
+(Photos need Storage/Blaze plan, but journal entries work without them.)
 
-How to use
+🧭 How to Use
 
-Create account or Sign in.
+➕ Create an account or sign in.
 
-Plan → add/edit/delete items.
+📅 Plan → add/edit/delete workouts.
 
-Track → fill workout (+ optional photo) → Save.
+🏋️ Track → log a workout (+ photo) → Save.
 
-Journal → view/edit/delete.
+📓 Journal → view/edit/delete entries.
 
-Progress → pick Exercise/Metric/Days (↻ to refresh).
+📈 Progress → select exercise/metric/days → refresh.
 
-Logout from the top bar.
+🔓 Logout from the top bar.
 
-Troubleshooting
+🛠️ Troubleshooting
 
-PERMISSION_DENIED: publish the rules above & make sure you’re logged in.
+PERMISSION_DENIED: Publish rules & check you’re logged in.
 
-Storage errors: Storage disabled/Blaze needed; photos are optional.
+Storage errors: Storage disabled/Blaze needed (photos optional).
 
-JVM 1.8 vs 17: set kotlinOptions.jvmTarget = "17" and Java 17 in compileOptions.
-
-License: MIT (or leave unlicensed for coursework).
+JVM mismatch: Use Java 17 and set kotlinOptions.jvmTarget = "17".
