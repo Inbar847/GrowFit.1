@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "789966374265",
+    "project_id": "growfit-eeefa",
+    "storage_bucket": "growfit-eeefa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789966374265:android:7eef3d8e3a1e175fe69ba8",
+        "android_client_info": {
+          "package_name": "com.example.growfit1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDurHD7lAe5hJoP28GCWZOxP8N6kEaSyFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
