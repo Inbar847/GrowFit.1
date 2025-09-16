@@ -2,6 +2,8 @@
 
 A clean, lightweight fitness app built with Kotlin + Jetpack Compose + Firebase to track your workouts.
 
+
+
 ✨ Features
 
 🔐 Auth: Email/password Sign Up / Sign In, auto-login, logout.
@@ -14,6 +16,8 @@ A clean, lightweight fitness app built with Kotlin + Jetpack Compose + Firebase 
 
 🎨 UX: Soft green Material 3 theme, smooth navigation, RTL support, empty states, form validation.
 
+
+
 🚀 Quick Start
 
 Open in Android Studio Koala/Iguana+ (JDK 17).
@@ -24,7 +28,10 @@ Sync Gradle → ▶ Run on API 30+ device/emulator.
 
 Enable Firebase Email/Password Auth + publish the rules below.
 
+
+
 🔧 Firebase Rules
+
 
 Firestore:
 
@@ -38,6 +45,7 @@ service cloud.firestore {
 }
 
 
+
 Storage (optional photos):
 
 rules_version = '2';
@@ -48,6 +56,8 @@ service firebase.storage {
     }
   }
 }
+
+
 
 
 (Photos need Storage/Blaze plan, but journal entries work without them.)
@@ -65,6 +75,8 @@ service firebase.storage {
 📈 Progress → select exercise/metric/days → refresh.
 
 🔓 Logout from the top bar.
+
+
 
 🛠️ Troubleshooting
 
